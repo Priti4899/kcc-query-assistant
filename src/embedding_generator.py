@@ -5,7 +5,7 @@ import pickle
 
 def generate_embeddings(input_csv, output_pkl):
     model = SentenceTransformer("all-mpnet-base-v2")
-    df = pd.read_csv("D:\Mypython\kcc_query_assistant\data\cleaned_kcc.csv")
+    df = pd.read_csv("D:\Mypython\kcc_query_assistant\data\cleaned_kcc1.csv")
     sentences = df["pair"].tolist()
     embeddings = model.encode(sentences, show_progress_bar=True)
     
