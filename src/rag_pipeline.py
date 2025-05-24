@@ -29,5 +29,5 @@ class RAGPipeline:
 
 # Test code
 if __name__ == "__main__":
-    rag = RAGPipeline("D:\Mypython\kcc_query_assistant\data\kcc_embeddings.pkl")
+    rag = RAGPipeline("D:\Mypython\kcc_query_assistant\data\kcc_embeddings1.pkl")
     print(rag.ask("asking about the control measure for aphid infestation in mustard crops"))
