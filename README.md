@@ -20,7 +20,7 @@ Many farmers and agricultural stakeholders seek reliable, contextual, and region
    - Export raw and preprocessed data with metadata.
 
 2. **Local LLM Deployment**
-   - Run an open-source model (e.g., Gemma 7B) via Ollama.
+   - Run an open-source model (e.g., Gemma 2B) via Ollama.
    - Ensure complete offline capability with CPU/GPU quantization.
 
 3. **Retrieval-Augmented Generation**
