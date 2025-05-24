@@ -14,4 +14,4 @@ def generate_embeddings(input_csv, output_pkl):
     print("Embeddings saved.")
 
 if __name__ == "__main__":
-    generate_embeddings("D:\Mypython\kcc_query_assistant\data\cleaned_kcc1.csv", "D:\Mypython\kcc_query_assistant\data\kcc_embeddings1.pkl")
+    generate_embeddings("D:\Mypython\kcc_query_assistant\data\cleaned_kcc1.csv", "D:\Mypython\kcc_query_assistant\data\kcc_embeddings.pkl")
