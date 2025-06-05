@@ -7,6 +7,7 @@ class RAGPipeline:
         self.store = VectorStore(embed_file)
         self.embedder = SentenceTransformer("all-mpnet-base-v2")
 
+
     def ask(self, query, threshold=0.6):
         q_vec = self.embedder.encode([query])[0]
         docs, distances = self.store.search(q_vec)
@@ -29,5 +30,5 @@ class RAGPipeline:
 
 # Test code
 if __name__ == "__main__":
-    rag = RAGPipeline("D:\Mypython\kcc_query_assistant\data\kcc_embeddings.pkl")
+    rag = RAGPipeline("D:\Mypython\kcc_query_assistant\kcc-query-assistant\data\kcc_embeddings.pkl")
     print(rag.ask("asking about the control measure for aphid infestation in mustard crops"))
